@@ -137,5 +137,25 @@ namespace UnitTests
 
             Assert.That(result, Is.EqualTo(Results.NextAction));
         }
+
+        [Test]
+        public void ShouldReturnNone()
+        {
+            var questionsValue = new Questions
+            {
+                RequireAction = false,
+                WorthKeeping = false,
+                RequireActionLater = false,
+                ManyActions = false,
+                TwoMinutes = false,
+                RightPerson = false,
+                SpecificTime = false
+            };
+
+            var sut = new ResultConcluder(questionsValue);
+            var result = sut.Conclude();
+
+            Assert.That(result, Is.EqualTo(Results.None));
+        }
     }
 }

@@ -58,7 +58,7 @@
             this.yesButton7 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.resultTab = new System.Windows.Forms.TabPage();
-            this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
+            this.resultLabel = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControl1.SuspendLayout();
             this.questionTab1.SuspendLayout();
@@ -89,6 +89,7 @@
             this.materialTabControl1.SelectedIndex = 0;
             this.materialTabControl1.Size = new System.Drawing.Size(965, 282);
             this.materialTabControl1.TabIndex = 0;
+            this.materialTabControl1.SelectedIndexChanged += new System.EventHandler(this.materialTabControl1_SelectedIndexChanged);
             // 
             // questionTab1
             // 
@@ -459,7 +460,7 @@
             // 
             // resultTab
             // 
-            this.resultTab.Controls.Add(this.materialLabel8);
+            this.resultTab.Controls.Add(this.resultLabel);
             this.resultTab.Location = new System.Drawing.Point(4, 22);
             this.resultTab.Name = "resultTab";
             this.resultTab.Size = new System.Drawing.Size(957, 256);
@@ -467,19 +468,19 @@
             this.resultTab.Text = "Result";
             this.resultTab.UseVisualStyleBackColor = true;
             // 
-            // materialLabel8
+            // resultLabel
             // 
-            this.materialLabel8.Depth = 0;
-            this.materialLabel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel8.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel8.Location = new System.Drawing.Point(0, 0);
-            this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel8.Name = "materialLabel8";
-            this.materialLabel8.Size = new System.Drawing.Size(957, 256);
-            this.materialLabel8.TabIndex = 0;
-            this.materialLabel8.Text = "[Result]";
-            this.materialLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.resultLabel.Depth = 0;
+            this.resultLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.resultLabel.Font = new System.Drawing.Font("Roboto", 11F);
+            this.resultLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.resultLabel.Location = new System.Drawing.Point(0, 0);
+            this.resultLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.resultLabel.Name = "resultLabel";
+            this.resultLabel.Size = new System.Drawing.Size(957, 256);
+            this.resultLabel.TabIndex = 0;
+            this.resultLabel.Text = "[Result]";
+            this.resultLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // materialTabSelector1
             // 
@@ -556,7 +557,7 @@
         private MaterialSkin.Controls.MaterialRaisedButton noButton5;
         private MaterialSkin.Controls.MaterialRaisedButton yesButton5;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
-        private MaterialSkin.Controls.MaterialLabel materialLabel8;
+        private MaterialSkin.Controls.MaterialLabel resultLabel;
     }
 }
 

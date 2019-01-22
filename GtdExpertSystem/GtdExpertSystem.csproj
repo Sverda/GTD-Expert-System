@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BussinesLogic\ResultConcluder.cs" />
+    <Compile Include="BussinesLogic\ResultsExtensions.cs" />
     <Compile Include="BussinesLogic\Validators\CalendarValidator.cs" />
     <Compile Include="BussinesLogic\Validators\MaybeValidator.cs" />
     <Compile Include="BussinesLogic\Validators\NextActionValidator.cs" />
