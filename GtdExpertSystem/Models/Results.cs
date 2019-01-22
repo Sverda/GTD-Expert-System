@@ -9,6 +9,7 @@
         DoItNow,
         Delegate,
         Calendar,
-        NextAction
+        NextAction,
+        None
     }
 }
